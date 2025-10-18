@@ -1,6 +1,6 @@
 FROM node:19-alpine as stage1
 MAINTAINER name viswanath
-EXPOSE 3000
+EXPOSE 80
 WORKDIR /flm
 COPY package*.json ./
 RUN npm install
