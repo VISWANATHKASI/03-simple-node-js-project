@@ -2,7 +2,7 @@ FROM node:19-alpine as stage1
 MAINTAINER name viswanath
 EXPOSE 3000
 WORKDIR /flm
-COPY package*.json ./flm
+COPY package*.json ./
 RUN npm install
 COPY . .
 
