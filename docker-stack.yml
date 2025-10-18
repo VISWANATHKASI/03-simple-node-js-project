@@ -3,7 +3,7 @@ version: '3.8'
 services:
   node:
     container_name: node
-    build: viswanathkasi/dummy
+    image: viswanathkasi/dummy
     ports:
       - "3000:80"
 ...
