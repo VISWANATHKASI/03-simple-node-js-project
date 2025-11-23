@@ -9,7 +9,7 @@ FROM stage1 as final
 RUN npm install --production
 COPY . .
 EXPOSE 3000
-CMD ["node","node.js"]
+CMD ["node","index.js"]
 
 
 
