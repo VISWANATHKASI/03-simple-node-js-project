@@ -1,7 +1,6 @@
-FROM node:19-alpine as stage1
+FROM node:alpine3.22 as stage1
 MAINTAINER name viswanath
-EXPOSE 80
-WORKDIR /flm
+WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
@@ -9,7 +8,8 @@ COPY . .
 FROM stage1 as final
 RUN npm install --production
 COPY . .
-CMD ["node", "index.js"]
+EXPOSE 3000
+CMD ["node","node.js"]
 
 
 
