@@ -3,9 +3,6 @@ version: '3.8'
 services:
   node:
     build: ./
-    image: viswanathkasi/node
-    deploy:
-      replicas: 5
     ports:
       - "81:80"
 ...
