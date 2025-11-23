@@ -1,6 +1,6 @@
 services:
   node:
     container_name: node
-    build: ./
+    build: .
     ports:
       - "81:80"
