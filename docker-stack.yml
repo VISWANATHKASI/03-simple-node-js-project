@@ -2,7 +2,10 @@
 version: '3.8'
 services:
   node:
-    image: viswanathkasi/dummy
+    build: ./
+    image: viswanathkasi/node
+    deploy:
+      replicas: 5
     ports:
-      - "8081:80"
+      - "81:80"
 ...
